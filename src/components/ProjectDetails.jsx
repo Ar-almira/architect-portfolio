@@ -5,6 +5,7 @@ import {
   Maximize2
 } from 'lucide-react';
 import ImageLightbox from './ImageLightbox';
+import { resolveAsset } from '../utils/resolveAsset';
 
 export default function ProjectDetails({ project, allProjects = [], onBack, onSelectProject }) {
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -192,7 +193,7 @@ export default function ProjectDetails({ project, allProjects = [], onBack, onSe
                 >
                   <div className="relative aspect-[16/10] overflow-hidden bg-[#F4EFEB]">
                     <img
-                      src={photo.url}
+                      src={resolveAsset(photo.url)}
                       alt={photo.label || `${project.title} — Plate ${index + 1}`}
                       loading={index < 6 ? 'eager' : 'lazy'}
                       className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
@@ -246,7 +247,7 @@ export default function ProjectDetails({ project, allProjects = [], onBack, onSe
                   <div className="relative overflow-hidden bg-[#F4EFEB] border border-[#E8E3DC]">
                     <div className="aspect-[16/10] sm:aspect-[21/10] overflow-hidden relative">
                       <img
-                        src={photo1.url}
+                        src={resolveAsset(photo1.url)}
                         alt={photo1.label || project.title}
                         loading="eager"
                         className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.02]"
@@ -279,7 +280,7 @@ export default function ProjectDetails({ project, allProjects = [], onBack, onSe
                     <div className="relative overflow-hidden bg-[#F4EFEB] border border-[#E8E3DC]">
                       <div className="aspect-[4/3] sm:aspect-[16/11] overflow-hidden relative">
                         <img
-                          src={photo2.url}
+                          src={resolveAsset(photo2.url)}
                           alt={photo2.label || 'Exterior view'}
                           loading="lazy"
                           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
@@ -303,7 +304,7 @@ export default function ProjectDetails({ project, allProjects = [], onBack, onSe
                     <div className="relative overflow-hidden bg-[#F4EFEB] border border-[#E8E3DC]">
                       <div className="aspect-[4/3] sm:aspect-[16/11] overflow-hidden relative">
                         <img
-                          src={photo3.url}
+                          src={resolveAsset(photo3.url)}
                           alt={photo3.label || 'Interior view'}
                           loading="lazy"
                           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
@@ -329,7 +330,7 @@ export default function ProjectDetails({ project, allProjects = [], onBack, onSe
                   <div className="relative overflow-hidden bg-[#F4EFEB] border border-[#E8E3DC]">
                     <div className="aspect-[16/9] sm:aspect-[21/9] overflow-hidden relative">
                       <img
-                        src={photo4.url}
+                        src={resolveAsset(photo4.url)}
                         alt={photo4.label || 'Full elevation view'}
                         loading="lazy"
                         className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.02]"
@@ -354,7 +355,7 @@ export default function ProjectDetails({ project, allProjects = [], onBack, onSe
                     <div className="relative overflow-hidden bg-[#F4EFEB] border border-[#E8E3DC]">
                       <div className="aspect-[16/10] sm:aspect-[16/9] overflow-hidden relative">
                         <img
-                          src={photo5.url}
+                          src={resolveAsset(photo5.url)}
                           alt={photo5.label || 'Detail study'}
                           loading="lazy"
                           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025]"
@@ -390,7 +391,7 @@ export default function ProjectDetails({ project, allProjects = [], onBack, onSe
               >
                 <div className="w-16 h-16 sm:w-20 sm:h-20 bg-[#F4EFEB] overflow-hidden flex-shrink-0 border border-[#E8E3DC]">
                   <img
-                    src={prevProject.image}
+                    src={resolveAsset(prevProject.image)}
                     alt={prevProject.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -419,7 +420,7 @@ export default function ProjectDetails({ project, allProjects = [], onBack, onSe
               >
                 <div className="w-16 h-16 sm:w-20 sm:h-20 bg-[#F4EFEB] overflow-hidden flex-shrink-0 border border-[#E8E3DC]">
                   <img
-                    src={nextProject.image}
+                    src={resolveAsset(nextProject.image)}
                     alt={nextProject.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
