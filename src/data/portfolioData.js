@@ -29,7 +29,7 @@ export const architectProfile = {
   images: {
     heroMain: "/pro1/Pro1.png",
     heroMainAlt: "Architectural monograph project drawing and spatial rendering by Almira Aslam Vathare",
-    heroSecondary: "/pro1/Pro.2.png",
+    heroSecondary: `${import.meta.env.BASE_URL}pro1/Pro.2.png`,
     heroSecondaryAlt: "Architectural detail and spatial study by Almira Aslam Vathare"
   },
 
@@ -69,128 +69,128 @@ export const architectProfile = {
       builtUpArea: "21,448 sq.m",
       tools: ["AutoDesk Revit", "AutoCAD", "Lumion", "Adobe Photoshop"],
       tagline: "A modern cultural sanctuary celebrating Islamic heritage through sacred geometric light, contemplative water courtyards, and communal harmony.",
-      image: "/pro1/Pro1.png",
+      image: `${import.meta.env.BASE_URL}pro1/Pro1.png`,
       description: "A modern cultural center in Pune celebrating Islamic heritage through architecture, art, education, spirituality, and community engagement.",
 
       gallery: [
         {
           id: 1,
-          url: "/pro1/Pro1.png",
+          url: `${import.meta.env.BASE_URL}pro1/Pro1.png`,
           label: "01 / Entrance Gate"
         },
         {
           id: 2,
-          url: "/pro1/Pro.2.png",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.2.png`,
           label: "02 / Aerial View"
         },
         {
           id: 3,
-          url: "/pro1/Pro.3.png",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.3.png`,
           label: "03 / Monument Signage"
         },
         {
           id: 4,
-          url: "/pro1/Pro.4.png",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.4.png`,
           label: "04 / Cafeteria"
         },
         {
           id: 5,
-          url: "/pro1/Pro.5.jpeg",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.5.jpeg`,
           label: "05 / Cafeteria & Courtyard"
         },
         {
           id: 6,
-          url: "/pro1/Pro.6.png",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.6.png`,
           label: "06 / Main Entrance to Cultural Center"
         },
         {
           id: 7,
-          url: "/pro1/Pro.7.png",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.7.png`,
           label: "07 / Entrance Plaza"
         },
         {
           id: 8,
-          url: "/pro1/Pro.8.jpeg",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.8.jpeg`,
           label: "08 / Central Spine Walkway"
         },
         {
           id: 9,
-          url: "/pro1/Pro.9.png",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.9.png`,
           label: "09 / Wudu Area"
         },
         {
           id: 10,
-          url: "/pro1/Pro.10.jpeg",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.10.jpeg`,
           label: "10 / Aerial View"
         },
         {
           id: 11,
-          url: "/pro1/Pro.11.png",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.11.png`,
           label: "11 / Multi-purpose Hall"
         },
         {
           id: 12,
-          url: "/pro1/Pro.12.jpeg",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.12.jpeg`,
           label: "12 / Mosque"
         },
         {
           id: 13,
-          url: "/pro1/Pro.13.png",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.13.png`,
           label: "13 / Mediation"
         },
         {
           id: 14,
-          url: "/pro1/Pro.14.png",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.14.png`,
           label: "14 / Mosque outdoor seating"
         },
         {
           id: 15,
-          url: "/pro1/Pro.15.png",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.15.png`,
           label: "15 / Multi-purpose Hall"
         },
         {
           id: 16,
-          url: "/pro1/Pro.16.png",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.16.png`,
           label: "16 / Calligraphic archway"
         },
         {
           id: 17,
-          url: "/pro1/Pro.17.png",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.17.png`,
           label: "17 / Calligraphic Stone"
         },
         {
           id: 18,
-          url: "/pro1/Pro.18.png",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.18.png`,
           label: "18 / Calligraphic Dome"
         },
         {
           id: 19,
-          url: "/pro1/Pro.19.png",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.19.png`,
           label: "19 / Gazebo"
         },
         {
           id: 20,
-          url: "/pro1/Pro.20.png",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.20.png`,
           label: "20 / Aquatic amphitheater"
         },
         {
           id: 21,
-          url: "/pro1/Pro.21.jpeg",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.21.jpeg`,
           label: "21 / Aerial View"
         },
         {
           id: 22,
-          url: "/pro1/Pro.22.png",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.22.png`,
           label: "22 / Thematic Garden"
         },
         {
           id: 23,
-          url: "/pro1/Pro.23.png",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.23.png`,
           label: "23 / Moses waterbody"
         },
         {
           id: 24,
-          url: "/pro1/Pro.24.png",
+          url: `${import.meta.env.BASE_URL}pro1/Pro.24.png`,
           label: "24 / Geometric garden"
         }
       ]
@@ -207,33 +207,33 @@ export const architectProfile = {
       builtUpArea: "3000 sq.m",
       tools: ["AutoCAD", "AutoDesk Revit", "Lumion", "Adobe Photoshop"],
       tagline: "A contemporary country residence harmonizing curved sculptural concrete walls, lush native groves, and seamless indoor-outdoor living.",
-      image: "/pro2/proB.jpeg",
+      image: `${import.meta.env.BASE_URL}pro2/proB.jpeg`,
       description: "A contemporary farmhouse residence featuring modern minimalist architecture, curved forms, landscaped greenery, and seamless indoor-outdoor living.",
 
       gallery: [
         {
           id: 1,
-          url: "/pro2/proB.jpeg",
+          url: `${import.meta.env.BASE_URL}pro2/proB.jpeg`,
           label: "01 / Aerial View"
         },
         {
           id: 2,
-          url: "/pro2/p2e.jpeg",
+          url: `${import.meta.env.BASE_URL}pro2/p2e.jpeg`,
           label: "02 / Entrance View"
         },
         {
           id: 3,
-          url: "/pro2/p2b.jpeg",
+          url: `${import.meta.env.BASE_URL}pro2/p2b.jpeg`,
           label: "03 / Swimming Pool & Barbeque Area"
         },
         {
           id: 4,
-          url: "/pro2/p2i.jpeg",
+          url: `${import.meta.env.BASE_URL}pro2/p2i.jpeg`,
           label: "04 / Swimming pool"
         },
         {
           id: 5,
-          url: "/pro2/p2g.jpeg",
+          url: `${import.meta.env.BASE_URL}pro2/p2g.jpeg`,
           label: "05 / Barbeque Area & Outdoor Seating"
         }
       ]
@@ -250,33 +250,33 @@ export const architectProfile = {
       builtUpArea: "3,800 sq.m",
       tools: ["AutoCAD", "Revit", "Lumion", "Photoshop"],
       tagline: "Industrial facade design featuring bold geometric forms, vertical fins, high-performance glass, and an assertive commercial presence.",
-      image: "/pro3/cover.jpeg",
+      image: `${import.meta.env.BASE_URL}pro3/cover.jpeg`,
       description: "Industrial facade design featuring bold geometric forms, vertical fins, glass panels, and a refined neutral palette that blends functionality with modern commercial aesthetics.",
 
       gallery: [
         {
           id: 1,
-          url: "/pro3/p3a.jpeg",
+          url: `${import.meta.env.BASE_URL}pro3/p3a.jpeg`,
           label: "01 / Final Facade View"
         },
         {
           id: 2,
-          url: "/pro3/p3b.jpeg",
+          url: `${import.meta.env.BASE_URL}pro3/p3b.jpeg`,
           label: "02 / Details"
         },
         {
           id: 3,
-          url: "/pro3/p3c.jpeg",
+          url: `${import.meta.env.BASE_URL}pro3/p3c.jpeg`,
           label: "03 / Exterior View"
         },
         {
           id: 4,
-          url: "/pro3/p3d.jpeg",
+          url: `${import.meta.env.BASE_URL}pro3/p3d.jpeg`,
           label: "04 / Same project - 2nd Design"
         },
         {
           id: 5,
-          url: "/pro3/p3e.jpeg",
+          url: `${import.meta.env.BASE_URL}pro3/p3e.jpeg`,
           label: "05 / Exterior - 2nd Design"
         }
       ]
@@ -293,33 +293,33 @@ export const architectProfile = {
       builtUpArea: "15000 sq.m",
       tools: ["AutoCAD", "AutoDesk Revit", "Photoshop", "Lumion"],
       tagline: "The dental college design emphasizes a modern institutional character, integrating academic spaces, clinical facilities, and research areas within a well-organized layout. Contemporary forms, efficient circulation, natural lighting, and landscaped courtyards create a functional, hygienic, and welcoming environment for students, faculty, and patients.",
-      image: "/pro4/cover.jpeg",
+      image: `${import.meta.env.BASE_URL}pro4/cover.jpeg`,
       description: "The Dental College campus features architectural design combining functional academic blocks with landscaped open spaces. Defined by clean geometric forms, earthy material tones, and modern façades, the campus integrates pedestrian pathways, shaded seating, and green pockets to create a cohesive, user-friendly, and welcoming institutional environment",
 
       gallery: [
         {
           id: 1,
-          url: "/pro4/p4a.jpeg",
+          url: `${import.meta.env.BASE_URL}pro4/p4a.jpeg`,
           label: "01 / OVERALL ARCHITECTURAL VIEW"
         },
         {
           id: 2,
-          url: "/pro4/p4b.jpeg",
+          url: `${import.meta.env.BASE_URL}pro4/p4b.jpeg`,
           label: "02 / Entrance View"
         },
         {
           id: 3,
-          url: "/pro4/p4c.jpeg",
+          url: `${import.meta.env.BASE_URL}pro4/p4c.jpeg`,
           label: "03 / Parking and East View"
         },
         {
           id: 4,
-          url: "/pro4/p4d.jpeg",
+          url: `${import.meta.env.BASE_URL}pro4/p4d.jpeg`,
           label: "04 / Playground"
         },
         {
           id: 5,
-          url: "/pro4/p4e.jpeg",
+          url: `${import.meta.env.BASE_URL}pro4/p4e.jpeg`,
           label: "05 / Amphitheatre & Outdoor Study Area"
         }
       ]
