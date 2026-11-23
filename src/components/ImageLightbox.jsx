@@ -1,5 +1,6 @@
 import React, { useEffect, useCallback } from 'react';
 import { X, ArrowLeft, ArrowRight } from 'lucide-react';
+import { resolveAsset } from '../utils/resolveAsset';
 
 export default function ImageLightbox({
   isOpen,
@@ -105,7 +106,7 @@ export default function ImageLightbox({
         <div className="relative max-w-full max-h-[76vh] flex items-center justify-center animate-fadeIn">
           <img
             key={currentImage.url}
-            src={currentImage.url}
+            src={resolveAsset(currentImage.url)}
             alt={currentImage.label || 'Architectural visual'}
             className="max-h-[76vh] max-w-[90vw] sm:max-w-[84vw] object-contain shadow-2xl transition-all duration-500"
           />
