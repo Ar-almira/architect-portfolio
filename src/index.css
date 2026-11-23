@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --color-warm-bg: #FAF8F5;
+  --color-warm-surface: #F4EFEB;
+  --color-warm-card: #FFFFFF;
+  --color-warm-border: #E8E3DC;
+  --color-warm-border-light: #F0ECE6;
+  --color-charcoal-900: #141312;
+  --color-charcoal-800: #252321;
+  --color-charcoal-700: #3E3B37;
+  --color-muted-stone: #78736B;
+  --color-muted-light: #A39D94;
+  --color-earth-accent: #6C665D;
+  --color-olive-deep: #43473E;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  
+  ::selection {
+    background-color: #E6E0D6;
+    color: #141312;
+  }
+}
+
+/* Subtle architectural grain / overlay utility */
+.editorial-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(216, 210, 201, 0.25) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(216, 210, 201, 0.25) 1px, transparent 1px);
+}
+
+/* Custom smooth transitions for architectural hover states */
+.transition-architectural {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.transition-slow {
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
