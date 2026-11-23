@@ -1,16 +1,7 @@
 import React from 'react';
 import { ArrowDown, ArrowUpRight } from 'lucide-react';
 import { architectProfile } from '../data/portfolioData';
-
-// Helper to safely handle any path format (relative, web url, or windows backslashes)
-function resolveAsset(path) {
-  if (!path) return '';
-  if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('data:')) {
-    return path;
-  }
-  const clean = path.replace(/\\/g, '/');
-  return clean.startsWith('/') ? clean : `/${clean}`;
-}
+import { resolveAsset } from '../utils/resolveAsset';
 
 export default function Hero() {
   const {
