@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { architectProfile } from '../data/portfolioData';
+import { resolveAsset } from '../utils/resolveAsset';
 
 export default function Projects({ onSelectProject }) {
   const { projects } = architectProfile;
@@ -46,7 +47,7 @@ export default function Projects({ onSelectProject }) {
                   >
                     <div className="aspect-[16/10] overflow-hidden relative">
                       <img
-                        src={project.image}
+                        src={resolveAsset(project.image)}
                         alt={`${project.title} — ${project.category}`}
                         loading="lazy"
                         className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
