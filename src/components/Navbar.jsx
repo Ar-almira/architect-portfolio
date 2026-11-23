@@ -182,13 +182,13 @@ export default function Navbar({ activeSection = 'home', isProjectView = false, 
           <div className="text-xs font-sans text-[#78736B]">
             <p className="font-medium text-[#141312]">Almira Aslam Vathare</p>
             <p>Architect | Spatial Designer</p>
-            <p className="text-[11px] text-[#A39D94] mt-1">Class of 2025</p>
+            <p className="text-[11px] text-[#A39D94] mt-1">Class of 2026</p>
           </div>
           <a
-            href="mailto:almira.vathare@archstudio.design"
+            href="mailto:ar.almira7@gmail.com"
             className="text-xs tracking-[0.1em] text-[#141312] underline underline-offset-4 decoration-[#E8E3DC] hover:decoration-[#141312] transition-colors"
           >
-            almira.vathare@archstudio.design
+            ar.almira7@gmail.com
           </a>
         </div>
       </div>
