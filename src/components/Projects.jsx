@@ -1,10 +1,11 @@
-import React from 'react';
-import { ArrowUpRight } from 'lucide-react';
+import React, { useState } from 'react';
+import { ArrowUpRight, ChevronDown, Download, FileText } from 'lucide-react';
 import { architectProfile } from '../data/portfolioData';
 import { resolveAsset } from '../utils/resolveAsset';
 
 export default function Projects({ onSelectProject }) {
-  const { projects } = architectProfile;
+  const { projects, explorePdfs = [] } = architectProfile;
+  const [showExplorePdfs, setShowExplorePdfs] = useState(false);
 
   return (
     <section
@@ -118,6 +119,69 @@ export default function Projects({ onSelectProject }) {
             );
           })}
         </div>
+
+        {/* Explore More Drawings & PDFs Section (After Dental College Project) */}
+        {explorePdfs.length > 0 && (
+          <div className="mt-20 sm:mt-24 pt-12 border-t border-[#E8E3DC]">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+              <div>
+                <span className="text-[11px] font-sans tracking-[0.24em] uppercase text-[#A39D94] block mb-2 font-medium">
+                  Additional Archive &bull; PDF Drawings
+                </span>
+                <h3 className="font-serif text-2xl sm:text-3xl font-normal text-[#141312] tracking-tight">
+                  Drawings, Academic Works &amp; Technical Sheets
+                </h3>
+              </div>
+
+              <button
+                type="button"
+                onClick={() => setShowExplorePdfs((prev) => !prev)}
+                aria-expanded={showExplorePdfs}
+                aria-controls="explore-more-pdfs"
+                className="inline-flex items-center justify-center gap-3 text-xs font-sans tracking-[0.16em] uppercase text-[#FAF8F5] bg-[#141312] hover:bg-[#3E3B37] px-6 py-3.5 font-medium transition-all duration-300 rounded-[2px] self-start sm:self-auto cursor-pointer"
+              >
+                <span>Explore More</span>
+                <ChevronDown
+                  className={`w-4 h-4 transition-transform duration-300 ${showExplorePdfs ? 'rotate-180' : ''}`}
+                />
+              </button>
+            </div>
+
+            {showExplorePdfs && (
+              <div
+                id="explore-more-pdfs"
+                className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6"
+              >
+                {explorePdfs.map((doc, idx) => (
+                  <a
+                    key={doc.id}
+                    href={encodeURI(resolveAsset(doc.file))}
+                    download={doc.fileName}
+                    className="group p-6 bg-[#F5F2EC] hover:bg-[#FAF8F5] border border-[#E8E3DC] hover:border-[#141312] transition-all duration-300 flex flex-col justify-between gap-6 rounded-[2px]"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between text-[10px] font-sans tracking-[0.18em] uppercase text-[#A39D94] mb-4">
+                        <span>{String(idx + 1).padStart(2, '0')} &bull; PDF</span>
+                        <FileText className="w-4 h-4 text-[#78736B] group-hover:text-[#141312] transition-colors" />
+                      </div>
+                      <h4 className="font-serif text-xl sm:text-2xl text-[#141312] font-normal tracking-tight group-hover:text-[#43473E] transition-colors">
+                        {doc.title}
+                      </h4>
+                      <p className="mt-1.5 text-xs font-sans text-[#78736B] leading-relaxed">
+                        {doc.subtitle}
+                      </p>
+                    </div>
+
+                    <div className="pt-4 border-t border-[#E8E3DC] flex items-center justify-between text-xs font-sans tracking-[0.14em] uppercase text-[#141312] font-medium">
+                      <span>Download PDF</span>
+                      <Download className="w-4 h-4 transition-transform duration-300 group-hover:translate-y-0.5" />
+                    </div>
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
 
       </div>
     </section>
