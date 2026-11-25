@@ -324,5 +324,36 @@ export const architectProfile = {
         }
       ]
     }
+  ],
+
+  explorePdfs: [
+    {
+      id: "dental-college",
+      title: "Dental College",
+      subtitle: "Architectural Drawings & Campus Study",
+      file: `${import.meta.env.BASE_URL}pdf/Dental College - Drawings.pdf`,
+      fileName: "Dental College - Drawings.pdf"
+    },
+    {
+      id: "4th-year-project",
+      title: "4th Year Project",
+      subtitle: "Academic Architectural Portfolio",
+      file: `${import.meta.env.BASE_URL}pdf/4th year Project.pdf`,
+      fileName: "4th year Project.pdf"
+    },
+    {
+      id: "working-drawing",
+      title: "Working Drawing",
+      subtitle: "Technical Drafting & Construction Details",
+      file: `${import.meta.env.BASE_URL}pdf/Working Drawing.pdf`,
+      fileName: "Working Drawing.pdf"
+    },
+    {
+      id: "revit-first-model",
+      title: "Revit - First Model",
+      subtitle: "3D BIM Modeling & Documentation",
+      file: `${import.meta.env.BASE_URL}pdf/Revit - First Model.pdf`,
+      fileName: "Revit - First Model.pdf"
+    }
   ]
 };
