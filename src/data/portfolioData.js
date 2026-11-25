@@ -136,7 +136,7 @@ export const architectProfile = {
         {
           id: 13,
           url: `${import.meta.env.BASE_URL}pro1/Pro.13.png`,
-          label: "13 / Mediation"
+          label: "13 / Meditation"
         },
         {
           id: 14,
